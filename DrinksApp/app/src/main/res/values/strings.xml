@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DrinksApp</string>
+    <string name="drinks_app_logo">DrinksApp logo</string>
+    <string-array name="options">
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Fun</item>
+    </string-array>
 </resources>

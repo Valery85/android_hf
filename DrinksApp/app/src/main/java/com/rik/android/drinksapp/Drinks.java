@@ -1,5 +1,7 @@
 package com.rik.android.drinksapp;
 
+import java.lang.reflect.Array;
+
 public class Drinks {
 
     private String name;
@@ -12,6 +14,12 @@ public class Drinks {
         this.imageResouceId = imageResouceId;
     }
 
+   public final static  Drinks[] drinks = {
+        new Drinks("Latte", "Espresso with milk", R.drawable.latte),
+        new Drinks("Cappuccino", "Espresso milk and foam", R.drawable.cappucino),
+        new Drinks("Filter", "Some coffe", R.drawable.filter)
+    };
+
     public String getName() {
         return name;
     }
@@ -23,4 +31,8 @@ public class Drinks {
     public int getImageResouceId() {
         return imageResouceId;
     }
+
+
+
+
 }
