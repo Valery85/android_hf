@@ -14,6 +14,7 @@ public class DrinkCategoryActivity extends ListActivity {
     protected void onListItemClick(ListView l, View v, int position, long indexInArrayDrink) {
         Intent intent = new Intent(DrinkCategoryActivity.this, DrinkActivity.class);
         intent.putExtra(DrinkActivity.DRINK_NO, (int) indexInArrayDrink);
+        startActivity(intent);
     }
 
     @Override
