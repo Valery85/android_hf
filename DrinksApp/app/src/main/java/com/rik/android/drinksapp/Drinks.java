@@ -31,8 +31,10 @@ public class Drinks {
     public int getImageResouceId() {
         return imageResouceId;
     }
-
-
-
-
+// Define toString for ArrayAdapter used in DrinkCategoryActivity, to fill list automaticly
+// with name of drinks
+    @Override
+    public String toString() {
+        return this.name;
+    }
 }
