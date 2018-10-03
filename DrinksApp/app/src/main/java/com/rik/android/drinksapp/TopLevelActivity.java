@@ -14,8 +14,7 @@ public class TopLevelActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top_level);
 
-        // add lister
-
+        // register listener for ListView
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -30,8 +29,5 @@ public class TopLevelActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.list_options);
         listView.setOnItemClickListener(itemClickListener);
-
     }
-
-
 }

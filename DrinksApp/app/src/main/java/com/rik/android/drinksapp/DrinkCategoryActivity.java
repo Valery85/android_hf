@@ -22,7 +22,7 @@ public class DrinkCategoryActivity extends ListActivity {
         super.onCreate(savedInstanceState);
 
         // as I use special activity extended ListActivity I can get listView without layout creation
-    ListView listView = getListView();
+        ListView listView = getListView();
 
         //to fill listView I need ArrayAdapter which know how to fill it automatically
         // it will fill it with toString() method, so it's important that it has to be defined
@@ -30,13 +30,8 @@ public class DrinkCategoryActivity extends ListActivity {
         ArrayAdapter<Drinks> adapter = new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_list_item_1,
-                Drinks.drinks );
+                Drinks.drinks);
         listView.setAdapter(adapter);
 
-
-        }
-
-
-
-
+    }
 }
