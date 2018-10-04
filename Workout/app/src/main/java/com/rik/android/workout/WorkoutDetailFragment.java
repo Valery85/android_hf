@@ -12,7 +12,7 @@ import android.view.ViewGroup;
  * A simple {@link Fragment} subclass.
  */
 public class WorkoutDetailFragment extends Fragment {
-
+    private long workoutId;
 
     public WorkoutDetailFragment() {
         // Required empty public constructor
@@ -23,7 +23,11 @@ public class WorkoutDetailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_workout_detail, container, false);
+        View view = inflater.inflate(R.layout.fragment_workout_detail, container, false);
+        return view;
     }
-
+// method to transfer id in fragment from MainActivity
+    public void setWorkoutId(long workoutId) {
+        this.workoutId = workoutId;
+    }
 }
