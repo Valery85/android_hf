@@ -13,11 +13,20 @@
 
     </fragment>
 
-    <fragment
-        android:id="@+id/details_fragment"
-        class="com.rik.android.workout.WorkoutDetailFragment"
-        android:layout_weight="3"
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"></fragment>
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+
+    </FrameLayout>
+
+
+    <!--<fragment-->
+    <!--android:id="@+id/details_fragment"-->
+    <!--class="com.rik.android.workout.WorkoutDetailFragment"-->
+    <!--android:layout_weight="3"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"></fragment>-->
 
 </LinearLayout>
