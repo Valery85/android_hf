@@ -20,7 +20,7 @@ public class WorkoutDetailFragment extends Fragment {
         // Required empty public constructor
     }
 
-
+    // fix data losing when device rotate
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -49,6 +49,7 @@ public class WorkoutDetailFragment extends Fragment {
         }
     }
 
+    // fix data losing when device rotate
     @Override
     public void onSaveInstanceState(Bundle savedIntanceState) {
         savedIntanceState.putLong("workoutId", workoutId);
