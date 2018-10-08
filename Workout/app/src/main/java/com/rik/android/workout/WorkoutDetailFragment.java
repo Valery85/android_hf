@@ -28,6 +28,10 @@ public class WorkoutDetailFragment extends Fragment {
         if (savedInstanceState != null) {
             workoutId = savedInstanceState.getLong("workoutId");
         }
+        // Fix situation when device rotate and stopwatch get 0 in time area
+        // to prevent execution of transaction which create fragment again
+        // savedInstanceState checks
+        else {
 // getChildFragment() method used because it inside another fragment
         FragmentTransaction ft = getChildFragmentManager().beginTransaction();
         StopwatchFragment stopwatchFragment = new StopwatchFragment();
@@ -35,6 +39,8 @@ public class WorkoutDetailFragment extends Fragment {
         ft.addToBackStack(null);
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         ft.commit();
+        }
+
         return inflater.inflate(R.layout.fragment_workout_detail, container, false);
     }
 
