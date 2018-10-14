@@ -17,7 +17,7 @@ public class Drinks {
    public final static  Drinks[] drinks = {
         new Drinks("Latte", "Espresso with milk", R.drawable.latte),
         new Drinks("Cappuccino", "Espresso milk and foam", R.drawable.cappucino),
-        new Drinks("Filter", "Some coffe", R.drawable.filter)
+        new Drinks("Filter", "Some coffee", R.drawable.filter)
     };
 
     public String getName() {
