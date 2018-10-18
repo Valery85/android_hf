@@ -55,7 +55,8 @@ public class DrinkActivity extends AppCompatActivity {
                     new String[] {"NAME","DESCRIPTION", "IMAGE_RESOURCE_ID"},
                     "_id = ?",
                     //working right if correct  drinkNo to drinkNo + 1
-                    new String[] {Integer.toString(drinkNo + 1)},
+                    // when DrinkCategoryActivity begin use db is't ok
+                    new String[] {Integer.toString(drinkNo )},
                     null, null, null);
 
             // go to first element of data formed by query
