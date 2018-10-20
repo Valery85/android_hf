@@ -13,7 +13,6 @@
         android:src="@drawable/drinks_app_logo"
         android:contentDescription="@string/drinks_app_logo"/>
 
-
     <ListView
         android:id="@+id/list_options"
         android:layout_width="wrap_content"
